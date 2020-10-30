@@ -1,13 +1,15 @@
 header * {
   color: var(--text-color);
   grid-area: "header";
-  height: 8vh;
-  display: block;
+  z-index: 999;
 }
 
 header {
   background: var(--header-footer-color);
   background-color: #393939;
+  height: 10vh;
+  display: block;
+  /* border-radius: 0 0 10px 10px; */
 }
 
 header .logo {
@@ -56,7 +58,7 @@ header .menu-toggle {
 
 header ul li ul {
   position: absolute;
-  top: 69px;
+  top: 8.5vh;
   right: 0px;
   width: inherit;
   display: none;
@@ -86,12 +88,12 @@ header ul li ul li a {
   color: var(--text-color);
 }
 
-ul > li > a:hover {
+header ul > li > a:hover {
   color: var(--text-color);
   position: relative;
 }
 
-ul > li > a::before {
+header ul > li > a::before {
   content: "";
   display: block;
   height: 1px;
@@ -101,18 +103,20 @@ ul > li > a::before {
   transform-origin: bottom left;
 
   position: absolute;
-  bottom: 0;
+  bottom: 0.25vh;
   left: 0;
 
   transition: ease-in 300ms;
+
+  z-index: 99;
 }
 
-ul > li > a:hover::before {
+header ul > li > a:hover::before {
   width: 100%;
   transform: scaleX(1);
 }
 
-ul > li > a.logout::before {
+header ul > li > a.logout::before {
   content: "";
   display: block;
   height: 1px;
@@ -122,13 +126,15 @@ ul > li > a.logout::before {
   transform-origin: bottom left;
 
   position: absolute;
-  bottom: 0;
+  bottom: 0vh;
   left: 0;
 
   transition: ease-in 200ms;
+
+  z-index: 99;
 }
 
-ul > li > a.logout:hover::before {
+header ul > li > a.logout:hover::before {
   width: 100%;
   transform: scaleX(1);
 }

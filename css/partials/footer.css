@@ -1,0 +1,207 @@
+/* Footer */
+
+footer {
+  grid-area: "footer";
+  width: 100%;
+  background-color: var(--header-footer-color);
+  background-color: #393939;
+  height: 15vh;
+  padding-bottom: 2vh;
+  z-index: 999;
+}
+
+.footer-container {
+  height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+footer ul li ul li {
+  width: 100%;
+}
+
+footer ul li ul li a {
+  padding: 10px;
+  background: var(--header-footer-color);
+  background-color: #393939;
+  color: var(--text-color);
+}
+
+footer ul > li > a:hover {
+  color: var(--text-color);
+  position: relative;
+}
+
+footer ul > li > a::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--background-color);
+
+  transform: scaleX(0);
+  transform-origin: bottom left;
+
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+
+  transition: ease-in 300ms;
+
+  z-index: 99;
+}
+
+footer ul > li > a:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+footer ul > li > a.logout::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #b0121e;
+
+  transform: scaleX(0);
+  transform-origin: bottom left;
+
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+
+  transition: ease-in 200ms;
+
+  z-index: 99;
+}
+
+footer ul > li > a.logout:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.contact-us {
+  grid-column: 1/1;
+  /* height: inherit; */
+  width: inherit;
+  display: flex;
+}
+
+.contact-us ul {
+  align-content: flex-start;
+  list-style-type: none;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 3px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.contact-us ul li a {
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--li-a-font-family);
+  font-weight: var(--li-a-font-weight);
+  text-decoration: var(--li-a-text-decoration);
+  text-transform: var(--li-a-text-transform);
+  font-size: var(--footer-font-size);
+}
+
+.contact-us ul p {
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--general-font-family);
+  font-weight: 600;
+  text-transform: var(--general-text-transform);
+  font-size: 0.7rem;
+}
+
+.social {
+  grid-column: 2/5;
+  /* height: inherit; */
+  width: inherit;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.copyright {
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--li-a-font-family);
+  font-weight: var(--li-a-font-weight);
+  text-decoration: var(--li-a-text-decoration);
+  text-transform: var(--li-a-text-transform);
+  font-size: var(--footer-font-size);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.social ul {
+  grid-row: 2/2;
+  text-align: center;
+  margin: 0;
+  top: 0px;
+
+  padding: 0;
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--li-a-font-family);
+  font-weight: var(--li-a-font-weight);
+  text-decoration: var(--li-a-text-decoration);
+  text-transform: var(--li-a-text-transform);
+}
+
+.social ul li {
+  letter-spacing: 10px;
+  font-size: 1.5rem;
+}
+
+.social ul p {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.social ul li {
+  display: inline-block;
+  align-content: center;
+}
+
+.social ul li i:hover {
+  content: "";
+  color: #a1a1a1;
+}
+
+.about-us {
+  grid-column: 5/5;
+  /* height: inherit; */
+  width: inherit;
+
+  display: flex;
+}
+
+.about-us ul {
+  list-style-type: none;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 3px;
+  margin-left: 45px;
+}
+
+.about-us ul li a {
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--li-a-font-family);
+  font-weight: var(--li-a-font-weight);
+  text-decoration: var(--li-a-text-decoration);
+  text-transform: var(--li-a-text-transform);
+  font-size: var(--footer-font-size);
+}
+
+.about-us ul p {
+  color: var(--text-color);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--general-font-family);
+  font-weight: 600;
+  text-transform: var(--general-text-transform);
+  font-size: 0.7rem;
+}
