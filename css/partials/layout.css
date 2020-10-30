@@ -1,0 +1,13 @@
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sub header"
+    "main"
+    "footer";
+}

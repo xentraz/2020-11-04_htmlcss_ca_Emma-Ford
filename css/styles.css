@@ -1,0 +1,45 @@
+:root {
+  --logo-font-family: "Alegreya Sans SC", sans-serif;
+  --logo-font-size: 3rem;
+
+  --text-color: #ffffff;
+  --green-text-color: #5e7663;
+  --background-color: #ffffff;
+
+  --header-footer-color: #393939;
+
+  --header-font-size: 0.9rem;
+
+  --li-style-type: none;
+  --li-a-text-transform: uppercase;
+  --li-a-font-family: "Lato", sans-serif;
+  --li-a-text-decor: none;
+  --li-a-font-weight: 300;
+  --li-a-text-decoration: none;
+
+  --footer-font-size: 0.7rem;
+
+  --white-opacity: rgba(255, 255, 255, 0.445);
+  --black-opacity: rgba(0, 0, 0, 0.75);
+  /* Come back to black opacity */
+
+  --general-font-family: "Lato", sans-serif;
+  /* Come back to font family */
+  --general-text-transform: uppercase;
+  --general-font-weight: 300;
+  --general-letter-spacing: 1px;
+  --general-border: 1px solid black;
+  --general-font-size: 1rem;
+  --general-text-decoration: none;
+
+  --heading1-color: #ffffff;
+  --heading1-font-size: 1.5rem;
+  --heading1-text-decoration: none;
+  --heading1-letter-spacing: 1px;
+  --heading1-font-family: "Lato", sans-serif;
+  --heading1-font-weight: 600;
+
+  --heading2-color: #000000;
+  --heading2-font-size: 1.2rem;
+  --heading2-font-weight: 100;
+}
