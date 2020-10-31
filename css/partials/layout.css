@@ -1,4 +1,4 @@
-body {
+/* body {
   height: 100%;
   box-sizing: border-box;
   padding: 0;
@@ -10,4 +10,9 @@ body {
     "sub header"
     "main"
     "footer";
-}
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+} 

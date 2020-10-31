@@ -1,0 +1,133 @@
+.checkout-backgeround {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/img/controller-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.checkout-grid {
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5vh 85vh 5vh;
+    background-color:  rgba(255, 255, 255, 0.445);
+}
+
+.checkout-grid .checkout {
+    display: block;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.checkout .game-list {
+    grid-column: 1/1;
+    height: 85vh;
+    
+    display: grid;
+    grid-template-rows: 5vh 30vh 30vh 5vh 7vh;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2vh;
+
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.checkout .game-list .overview {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+    border: 1px solid red;
+}
+
+.checkout .game-list .game-list1 {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    border: 1px solid red;
+}
+
+.checkout .game-list .game-img1 {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    border: 1px solid red;
+}
+
+.checkout .tabcontent {
+    /* border-left: 2px solid white; */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    float: right;
+    padding: 0px;
+
+    width: 85%;
+    height: 85vh;
+}
+
+.payment-tab {
+    float: left;
+    width: 15%;
+    border-right: 0px solid #393939;
+}
+
+.payment-tab button {
+    color: var(	--text-color);
+    letter-spacing: var(--general-letter-spacing);
+    font-family: var(--li-a-font-family);
+    font-weight: 700;
+    text-decoration: var(--li-a-text-decoration);
+    text-transform: var(--li-a-text-transform);
+    font-size: 1rem;
+    background-color: #0E0E0E;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    align-content: center;
+
+    width: 100%;
+    border: none;
+    outline: none;
+
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+
+    transition: 0.2s;
+    height: 21.25vh;
+
+    /* border-left: 1px solid rgba(255, 255, 255, 0.75); */
+
+    text-align: center;
+}
+
+.payment-tab button i {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.payment-tab button:hover {
+    /* background-color: #393939; */
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.75);
+    border-top: 1px solid  rgba(255, 255, 255, 0.75);
+  }
+  
+  .payment-tab button.active {
+    background-color:  #393939;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.75);
+    border-top: 1px solid  rgba(255, 255, 255, 0.75);
+  }
+
+
+

@@ -1,13 +1,12 @@
 header * {
   color: var(--text-color);
-  grid-area: "header";
   z-index: 999;
 }
 
 header {
   background: var(--header-footer-color);
   background-color: #393939;
-  height: 10vh;
+  height: 70px;
   display: block;
   /* border-radius: 0 0 10px 10px; */
 }
@@ -58,7 +57,7 @@ header .menu-toggle {
 
 header ul li ul {
   position: absolute;
-  top: 8.5vh;
+  top: 69px;
   right: 0px;
   width: inherit;
   display: none;
@@ -96,14 +95,14 @@ header ul > li > a:hover {
 header ul > li > a::before {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: var(--background-color);
 
   transform: scaleX(0);
   transform-origin: bottom left;
 
   position: absolute;
-  bottom: 0.25vh;
+  bottom: 0px;
   left: 0;
 
   transition: ease-in 300ms;

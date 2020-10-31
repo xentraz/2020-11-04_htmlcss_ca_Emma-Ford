@@ -7,13 +7,15 @@
 @import "/css/Partials/index.css";
 
 @import "/css/Partials/account.css";
-@import "/css/Partials/browse.css";
+/* @import "/css/Partials/browse.css"; */
 @import "/css/Partials/checkout.css";
 @import "/css/partials/basket.css";
 @import "/css/Partials/checkout-complete.css";
 @import "/css/Partials/contact.css";
 @import "/css/Partials/create-account.css";
 @import "/css/Partials/search.css";
+
+@import "/css/partials/browse1.css";
 
 /* General Styles */
 @import "/css/styles.css";
