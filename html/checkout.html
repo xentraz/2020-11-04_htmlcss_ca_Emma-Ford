@@ -43,7 +43,7 @@
           <li><a href="#">Membership</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">FAQ</a></li>
-          <li><a href="/html/checkout.html">Basket</a></li>
+          <li><a href="/html/basket.html">Basket</a></li>
           <!-- <li><a href="#">Sign Up</a></li>
       <li><a href="#">Login</a></li> -->
           <li class="username">
@@ -69,13 +69,45 @@
     <div class="checkout-grid">
         <div class="checkout">
             <section class="game-list">
-                <div class="overview"></div>
-                <div class="game-list1"></div>
-                <div class="game-img1"></div>
-                <div class="game-list2"></div>
-                <div class="game-img2"></div>
-                <div class="checkout-summary"></div>
-                <div class="checkout-price"></div>
+              <div class="order-summary">
+                <h1>ORDER SUMMARY</h1>
+              </div>
+              <div class="checked-game-1">
+                <div class="game-image"></div>
+                <div class="game-title">
+                  <h2>Overwatch</h2>
+                </div>
+                <div class="point">
+                  <p>vip points: 10</p>
+                </div>
+                <div class="total">
+                  <p>total <span>inc. vat</span></p>
+                </div>
+                <div class="game-price">
+                  <p>nok 289-,</p>
+                </div>
+              </div>
+              <div class="checked-game-2">
+                <div class="game-image"></div>
+                <div class="game-title">
+                  <h2>Ark: Survival Evolved</h2>
+                </div>
+                <div class="point">
+                  <p>vip points: 10</p>
+                </div>
+                <div class="total">
+                  <p>total <span>inc. vat</span></p>
+                </div>
+                <div class="game-price">
+                  <p>nok 159-,</p>
+                </div>
+              </div>
+              <div class="total-points">
+                <p>vip point total: 20</p>
+              </div>
+              <div class="total-price">
+                <p>TOTAL: nok 448</p>
+              </div>
             </section>
             <div class="payment-info">
                 <div class="payment-tab">
@@ -86,26 +118,49 @@
                 </div>
                 <div id="visa" class="tabcontent">
                     <div class="visa-grid">
-                        <h3 class="payment-heading">Visa</h3>
-                        <p class="payment-info">London is the capital city of England.</p>
+                        <div class="payment-title">
+                          <h2>card details</h2>
+                        </div>
+                        <div class="card-number">
+                          <input type="text" class="card-number-input" placeholder=" * Card Number"/>
+                        </div>
+                        <div class="month">
+                          <input type="text" class="month-input" placeholder=" * Month"/>
+                        </div>
+                        <div class="year">
+                          <input type="text" class="year-input" placeholder=" * Year"/>
+                        </div>
+                        <div class="cvv">
+                          <input type="text" class="cvv-input" placeholder=" * CVV"/>
+                        </div>
+                        <div class="post-code">
+                          <input type="text" class="post-input" placeholder=" * Post Code"/>
+                        </div>
+                        <div class="save-details">
+                          <p class="save-info"> Saved credit cards are authorized for future purchases.</p>
+                          <p class="save-info-2">Save My card details. <i class="far fa-check-square"></i></p>
+                        </div>
+                        <div class="cancel-button">
+                          <a href="/html/basket.html" class="info-button"><span class="info-span">Cancel</span></a>
+                        </div>
+                        <div class="checkout-button">
+                          <a href="/html/checkout-complete.html" class="info-button"><span class="info-span">Check out</span></a>
+                        </div>
                     </div>
                   </div>
                   <div id="american-express" class="tabcontent">
-                    <div class="visa-grid">
-                        <h3 class="payment-heading">Transactions</h3>
-                        <p class="payment-info">London is the capital city of England.</p>
+                    <div class="american-grid">
+                        <h2 class="payment-heading">Looks like this page is empty...</h2>
                     </div>
                   </div>  
                   <div id="paypal" class="tabcontent">
                     <div class="paypal-grid">
-                        <h3 class="payment-heading">Security</h3>
-                        <p class="payment-info">London is the capital city of England.</p>
+                      <h2 class="payment-heading">Looks like this page is empty too...</h2>
                     </div>
                   </div>
                   <div id="apple-pay" class="tabcontent">
-                    <div class="visa-grid">
-                        <h3 class="payment-heading">Transactions</h3>
-                        <p class="payment-info">London is the capital city of England.</p>
+                    <div class="apple-grid">
+                      <h2 class="payment-heading">Looks like this page is empty...damn.</h2>
                     </div>
                 </div>                               
             </div>
