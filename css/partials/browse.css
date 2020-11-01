@@ -584,6 +584,7 @@
     grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
     grid-template-rows: 0.1fr 1fr;
     grid-column-gap: 0.8vw;
+    grid-row-gap: 0.8vh;
 }
 
 .free-games .free-text {
@@ -676,7 +677,7 @@
 .free-price-button .info-button {
     width: 100%;
     margin-left: 0px;
-    height: 8.1vh;
+    height: 8vh;
 }
 
 .free-more-info-button {
