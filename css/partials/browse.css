@@ -345,7 +345,7 @@
     text-decoration: var(--general-text-decoration);
     font-weight: 400;
 
-    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
 }
   
 .info-button:focus {

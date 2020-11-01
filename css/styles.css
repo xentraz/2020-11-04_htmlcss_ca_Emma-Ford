@@ -36,10 +36,11 @@
   --heading1-font-size: 1.5rem;
   --heading1-text-decoration: none;
   --heading1-letter-spacing: 1px;
-  --heading1-font-family: "Lato", sans-serif;
+  --heading1-font-family: "Alegreya Sans SC", sans-serif;
   --heading1-font-weight: 600;
 
   --heading2-color: #000000;
   --heading2-font-size: 1.2rem;
   --heading2-font-weight: 100;
+  --heading2-font-family: "Lato", sans-serif;;
 }

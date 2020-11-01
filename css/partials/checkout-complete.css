@@ -1,9 +1,112 @@
 .checkout-complete { 
+    height: 85vh;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.checkout-complete-title {
+    grid-row: 1/1;
+    grid-column: auto;
+
     height: 100%;
     width: 100%;
 
     margin: 0px;
     padding: 0px;
 
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: rgba(0, 0, 0, 0.45); */
+    border-bottom: 1px solid white;
+}
+
+.checkout-complete-title > p {
+    color: var(--heading1-color);
+    font-size: 4vh;
+    font-family: var(--heading1-font-family);
+    font-weight: 700;
+    letter-spacing: var(--general-letter-spacing);
+    text-decoration: var(--general-text-decoration);
+    text-transform: var(--general-text-transform);
+}
+
+.check-icon {
+    grid-row: 2/2;
+    grid-column: auto;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-icon i {
+    color: rgba(130, 202, 146, 0.5);
+    font-size: 25vh;
+    border: none;
+}
+
+.payment-confirmed {
+    grid-row: 3/3;
+    grid-column: auto;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-confirmed P {
+    color: var(--heading1-color);
+    font-size: 3vh;
+    font-family: var(--heading2-font-family);
+    font-weight: 700;
+    letter-spacing: var(--general-letter-spacing);
+    text-decoration: var(--general-text-decoration);
+    text-transform: var(--general-text-transform);
+}
+
+.vip-register {
+    grid-row: 4/4;
+    grid-column: auto;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vip-register P {
+    color: var(--heading1-color);
+    font-size: 2.5vh;
+    font-family: var(--heading2-font-family);
+    font-weight: 700;
+    letter-spacing: var(--general-letter-spacing);
+    text-decoration: var(--general-text-decoration);
+    text-transform: var(--general-text-transform);
 }
