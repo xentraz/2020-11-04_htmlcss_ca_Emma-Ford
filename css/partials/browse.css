@@ -7,10 +7,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
 }
 
 .games-grid {
-    height: 310vh;
+    height: 300vh;
     /* border: solid 1px   red; */
     width: 100%;
 
@@ -19,10 +20,90 @@
 
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 1vh 50vh 45vh 85vh 75vh;
+    grid-template-rows: 7vh 50vh 45vh 85vh 60vh;
     grid-row-gap: 5vh;
 
     background-color: rgba(255, 255, 255, 0.445);
+}
+
+.categories-bar {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+
+    padding: 0px;
+    margin: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #393939;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.categories-bar ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    z-index: 99;
+    position: absolute;
+}
+  
+.categories-bar ul li {
+    float: right;
+    position: relative;
+    display: block;
+    bottom: 0px;
+}
+  
+.categories-bar ul li a {
+    margin-inline-start: 26px;
+    /* margin: 0px; */
+
+    font-size: var(--header-font-size);
+    text-decoration: var(--li-a-text-decoration);
+    letter-spacing: var(--general-letter-spacing);
+    font-family: var(--li-a-font-family);
+    font-weight: var(--li-a-font-weight);
+    text-transform: var(--li-a-text-transform);
+    color: #ffffff;
+}
+
+
+.categories-bar  ul > li > a:hover {
+    color: var(--text-color);
+    position: relative;
+}
+  
+.categories-bar  ul > li > a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--background-color);
+  
+    transform: scaleX(0);
+    transform-origin: bottom;
+  
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  
+    transition: ease-in 300ms;
+  
+    z-index: 99;
+}
+  
+.categories-bar  ul > li > a:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+}
+  
+.categories-bar  ul > li > a.logout:hover::before {
+    width: 100%;
+    transform: scaleX(1);
 }
 
 .image-slider {
