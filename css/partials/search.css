@@ -149,10 +149,12 @@
 
     display: grid;
     grid-template-rows: 60% 20% 20%;
+    grid-template-columns: 1fr;
 }
 
 .game-image {
     grid-row: 1/1;
+    grid-column: 1/-1;
 
     height: 100%;
     width: 100%;
@@ -165,6 +167,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
+}
+
+.free-more-info-button {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+    height: 110%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.info-button {
+    height: 100%;
 }
 
 .game-title {
@@ -295,4 +312,51 @@
 
     background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.search-categories {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 10px;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-sidebar h3 {
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search-sidebar p {
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.search-features {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 10px;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
