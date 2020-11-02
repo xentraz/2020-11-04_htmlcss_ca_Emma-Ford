@@ -23,7 +23,7 @@ main .image-container {
   position: absolute;
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 10% 23% 33% 23% 10%;
+  grid-template-rows: 5% 28% 12% 18% 13% 20% 4%;
   overflow: hidden;
 }
 
@@ -32,66 +32,56 @@ main .image-container {
   grid-column: 2/2;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   background-color: transparent;
 
   text-align: center;
   text-transform: var(--general-text-transform);
-  color: var(--text-color);
+  color: rgba(0, 0, 0, 0.85);
   letter-spacing: var(--general-letter-spacing);
   font-family: var(--li-a-font-family);
   font-weight: 600;
 }
 
-.heading-1 h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.heading-1 {
+.heading-img {
   grid-row: 3/3;
   grid-column: 2/2;
 
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 
-  text-transform: var(--general-text-transform);
-  color: var(--heading1-color);
+  height: 100%;
+  width: 100%;
 
-  font-family: var(--logo-font-family);
-  font-size: 2rem;
+  background-image: url(/img/game-hub-heading.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.heading-1 span {
-  color: var(--green-text-color);
-}
-
-.heading-2 h2 {
-  margin-top: 60px;
-}
-
-.heading-2 {
-  grid-row: 3/4;
+.heading-1 {
+  grid-row: 4/4;
   grid-column: 2/2;
 
+  margin: 0;
+  padding: 0;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 
   text-transform: var(--general-text-transform);
-  color: #000000;
-  letter-spacing: var(--general-letter-spacing);
-  font-family: var(--li-a-font-family);
-  font-weight: var(--li-a-font-weight);
-  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.85);
+
+  font-family: var(--logo-font-family);
+  font-size: 1rem;
 }
 
 .browse-button {
-  grid-row: 4/5;
+  grid-row: 5/5;
   grid-column: 2/3;
 
   display: flex;
@@ -99,6 +89,25 @@ main .image-container {
   align-items: center;
 
   margin-top: 20px;
+}
+
+.more-about-text {
+  grid-row: 6/6;
+  grid-column: 2/2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: transparent;
+
+  text-align: center;
+  text-transform: var(--general-text-transform);
+  color: rgba(0, 0, 0, 0.85);
+  letter-spacing: var(--general-letter-spacing);
+  font-family: var(--li-a-font-family);
+  font-weight: 600;
+
 }
 
 .buy-button {
