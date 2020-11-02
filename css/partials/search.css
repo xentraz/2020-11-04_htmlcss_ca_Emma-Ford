@@ -1,0 +1,298 @@
+.search-main {
+    height: 142vh;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px 
+}
+
+.search-footer {
+    bottom: 0px;
+}
+
+.search-background {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url(/img/controller-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.search-background-overlay {
+    background-color: rgba(225, 225, 225,.45);
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.search-grid {
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-columns: 10% 65% 1% 14% 10%;
+    grid-template-rows: 10vh 2vh 7vh 90vh 10vh;
+    grid-row-gap: 1vh;
+}
+
+.categories-bar {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+}
+
+.search-title {
+    grid-row: 3/3;
+    grid-column: 2/5;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.search-title h1 {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+    
+    font-size: 1.9rem;
+    text-decoration: none;
+    letter-spacing: 7px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.search-sort {
+    grid-row: 3/3;
+    grid-column: 4/4;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    /* background-color: rgba(0, 0, 0, 0.75); */
+}
+
+.search-sort p {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-game-grid {
+    grid-row: 4/4;
+    grid-column: 2/2;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 0.05fr 1fr 0.05fr 1fr;
+    grid-template-rows: 1fr 0.05fr 1fr 0.3fr;
+}
+
+.result-game-1 {
+    grid-row: 1/1;
+    grid-column: 1/1;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.game-image {
+    grid-row: 1/1;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url(/img/cod-ghost.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.game-title {
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title h2 {
+    color: rgb(255, 255, 255);
+}
+
+.search-game-grid .info-button {
+    height: 90%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.result-game-2 {
+    grid-row: 1/1;
+    grid-column: 3/3;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.result-game-3 {
+    grid-row: 1/1;
+    grid-column: 5/5;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.result-game-4 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.result-game-5 {
+    grid-row: 3/3;
+    grid-column: 3/3;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.result-game-6 {
+    grid-row: 3/3;
+    grid-column: 5/5;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.more-button {
+    grid-row: 4/4;
+    grid-column: 1/1;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.more-button .info-button {
+    width: 80%;
+    height: 50%;
+}
+
+.search-sidebar {
+    grid-row: 4/4;
+    grid-column: 4/4;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+}

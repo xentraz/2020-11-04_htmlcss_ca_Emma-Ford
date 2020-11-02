@@ -24,6 +24,7 @@
     grid-row-gap: 3vh;
 
     background-color: rgba(255, 255, 255, 0.445);
+    
 }
 
 .categories-bar {
@@ -706,7 +707,7 @@
     padding: 0px;
 
     /* border: 1px solid green; */
-    /* background-color: rgba(0, 0, 0, 0.253); */
+    /* background-color: rgba(0, 0, 0, 0.45); */
 
     display: grid;
     grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
