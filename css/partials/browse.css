@@ -1,7 +1,7 @@
 .browse-main {
     margin: 0px;
     padding: 0px;
-    height: 100%;
+    height: 300vh;
 
     background-image: url(/img/controller-bg.jpg);
     background-position: center;
@@ -20,8 +20,8 @@
 
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 7vh 50vh 45vh 85vh 60vh;
-    grid-row-gap: 5vh;
+    grid-template-rows: 7vh 50vh 35vh 85vh 75vh;
+    grid-row-gap: 3vh;
 
     background-color: rgba(255, 255, 255, 0.445);
 }
@@ -33,14 +33,62 @@
     padding: 0px;
     margin: 0px;
 
-    height: 100%;
-    width: 100%;
-
     background-color: #393939;
+    position: relative;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    /* justify-content: space-between; */
+    flex-direction: row;
+}
+
+.search-bar-wrapper {
+    padding: 0px;
+    margin: 0px;
+
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    position: absolute;
+    right: 1vw;
+}
+
+.search-bar input {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 3px;
+}
+
+.search-bar input:focus {
+    width: 15vw;
+}
+
+.search-bar input:active {
+    width: 15vw;
+}
+
+.search-bar-wrapper button {
+    height: 5vh;
+    width: 5vh;
+
+    border-radius: 3px;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 1.3rem;
+
+    margin-left: 0.2vw;
+}
+
+.search-bar-wrapper button:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem; 
 }
 
 .categories-bar ul {
@@ -71,7 +119,6 @@
     text-transform: var(--li-a-text-transform);
     color: #ffffff;
 }
-
 
 .categories-bar  ul > li > a:hover {
     color: var(--text-color);
@@ -758,7 +805,7 @@
 .free-price-button .info-button {
     width: 100%;
     margin-left: 0px;
-    height: 8vh;
+    height: 100%;
 }
 
 .free-more-info-button {
@@ -911,9 +958,9 @@
 
     display: grid;
     grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
-    grid-template-rows: 0.15fr 1fr 0.05fr 1fr 0.15fr;
+    grid-template-rows: 0.15fr 1fr 0.0fr 1fr 0.15fr;
     grid-column-gap: 0.8vw;
-    grid-row-gap: 1vh;
+    grid-row-gap: 0.8vh;
 }
 
 .new-releases .new-text {
@@ -1598,9 +1645,9 @@
 
     display: grid;
     grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
-    grid-template-rows: 0.15fr 1fr 0.05fr 1fr 0.15fr;
+    grid-template-rows: 0.15fr 1fr 0.0fr 1fr 0.15fr;
     grid-column-gap: 0.8vw;
-    grid-row-gap: 1vh;
+    grid-row-gap: 0.8vh;
 }
 
 .used-games .used-text {

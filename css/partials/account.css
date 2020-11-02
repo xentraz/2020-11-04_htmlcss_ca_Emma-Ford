@@ -200,20 +200,6 @@ letter-spacing: var(--general-letter-spacing);
 text-decoration: var(--general-text-decoration);
 }
 
-/* .account-info label {
-grid-row: 1/2;
-grid-column: 1/2;
-margin-top: 3vh;
-
-color: var(--heading1-color);
-font-size: 1rem;
-font-family: var( --heading1-font-family);
-font-weight: var( --general-font-weight);
-letter-spacing: var(--general-letter-spacing);
-text-decoration: var(--general-text-decoration);
-text-transform: var(--general-text-transform);
-} */
-
 .edit-button1 {
 grid-row: 2/2;
 grid-column: 2/2;
