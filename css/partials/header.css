@@ -9,6 +9,7 @@ header {
   height: 70px;
   display: block;
   /* border-radius: 0 0 10px 10px; */
+  border-bottom: 1px solid rgba(225, 225, 225, .45);
 }
 
 header .logo {
@@ -16,15 +17,18 @@ header .logo {
   margin-left: 2em;
 }
 
-header .logo-text {
-  margin: 8px;
-  font-family: var(--logo-font-family);
-  font-size: var(--logo-font-size);
-  font-weight: 700;
-}
+header .logo-image {
+  background-image: url(/img/GHLogo2.png);
+  height: 70px;
+  width: 70px;
 
-header .logo-text span {
-  color: var(--green-text-color);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  padding: 0px;
+  margin: 0px;
 }
 
 header ul {
@@ -160,7 +164,7 @@ header ul > li > a.logout:hover::before {
 
 @media (max-width: 915px) {
   .logo {
-    padding-left: 24px;
+    padding-left: 14px;
   }
 
   .toggle-button {
