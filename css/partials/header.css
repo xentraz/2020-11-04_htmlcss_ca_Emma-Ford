@@ -162,9 +162,10 @@ header ul > li > a.logout:hover::before {
 
 /* Header Media Queries */
 
-@media (max-width: 915px) {
+@media (max-width: 1024px) {
   .logo {
-    padding-left: 14px;
+    padding-left: 20px;
+    margin-right:  40px;
   }
 
   .toggle-button {

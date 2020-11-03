@@ -450,3 +450,293 @@
     align-items: center;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    /*Tablet*/
+
+    .contact-main {
+        margin: 0px;
+        padding: 0px;
+    
+        height: 105vh;
+        width: 100%;
+    }
+
+    .contact-footer {
+        bottom: 0px;
+        /* position: absolute; */
+    }
+
+    .contact-us-background {
+        margin: 0px;
+        padding: 0px;
+    
+        height: 105vh;
+        width: 100%;
+    
+        background-image: url(/img/controller-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+    .contact-us-grid {
+        margin: 0px;
+        padding: 0px;
+
+        width: 100%;
+        height: 105vh;
+
+        display: grid;
+        grid-template-columns: 8% 42% 42% 8%;
+        grid-template-rows: 3vh 5vh 60vh 30vh 10vh;
+        grid-column-gap: 1.5%;
+        grid-row-gap: 1vh;
+
+        background-color:  rgba(255, 255, 255, 0.445);
+    }
+
+    .contact-heading {
+        grid-row: 2/2;
+        grid-column: 2/4;
+    
+        height: 100%;
+        width: 100%;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: rgba(0, 0, 0, 0.85);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+    }
+    
+    .contact-address {
+        grid-row: 3/3;
+        grid-column: 2/2;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 60vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr 1fr 1fr 3fr;
+        grid-template-columns: auto;
+    }
+
+    .contact-chat {
+        grid-row: 3/3;
+        grid-column: 3/3;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 60vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 4fr 5fr 0fr;
+        grid-template-columns: auto;
+    }
+
+    .live-chat-info input {
+        width: 30vw;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-social {
+        grid-row: 4/4;
+        grid-column: 2/4;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 30vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: auto;
+    }
+
+    .contact-social p {
+        color: var(--heading1-color);
+        font-size: 0.8rem;
+        font-family: var(--heading1-font-family);
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-decoration: var(--general-text-decoration);
+        text-transform: var(--general-text-transform); 
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-social p span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+    
+@media (max-width: 600px) {
+    /* Mobile */
+
+    .contact-main {
+        margin: 0px;
+        padding: 0px;
+    
+        height: 135vh;
+        width: 100%;
+    }
+
+    .contact-footer {
+        bottom: 0px;
+        /* position: relative; */
+    }
+
+    .contact-us-background {
+        margin: 0px;
+        padding: 0px;
+    
+        height: 135vh;
+        width: 100%;
+    
+        background-image: url(/img/controller-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+    .contact-us-grid {
+        margin: 0px;
+        padding: 0px;
+
+        width: 100%;
+        height: 135vh;
+
+        display: grid;
+        grid-template-columns: 8% 84% 8%;
+        grid-template-rows: 3vh 5vh 60vh 60vh 30vh 10vh;
+        grid-column-gap: 1.5%;
+        grid-row-gap: 1vh;
+
+        background-color:  rgba(255, 255, 255, 0.445);
+    }
+
+    .contact-heading {
+        grid-row: 2/2;
+        grid-column: 2/2;
+    
+        height: 100%;
+        width: 100%;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: rgba(0, 0, 0, 0.85);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
+    }
+    
+    .contact-address {
+        grid-row: 3/3;
+        grid-column: 2/2;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 60vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr 1fr 1fr 3fr;
+        grid-template-columns: auto;
+    }
+
+    .contact-chat {
+        grid-row: 4/4;
+        grid-column: 2/2;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 60vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 4fr 5fr 0fr;
+        grid-template-columns: auto;
+    }
+
+    .live-chat-info input {
+        width: 30vw;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-social {
+        grid-row: 5/5;
+        grid-column: 2/2;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        height: 30vh;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.78);
+    
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: auto;
+    }
+
+    .contact-social p {
+        color: var(--heading1-color);
+        font-size: 0.8rem;
+        font-family: var(--heading1-font-family);
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-decoration: var(--general-text-decoration);
+        text-transform: var(--general-text-transform); 
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-social p span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+    
+}
