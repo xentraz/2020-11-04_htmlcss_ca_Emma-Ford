@@ -1,181 +1,179 @@
-.checkout-complete { 
-    height: 85vh;
-    width: 100%;
+.checkout-complete {
+  height: 85vh;
+  width: 100%;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
 
-    background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .checkout-complete-title {
-    grid-row: 1/1;
-    grid-column: auto;
+  grid-row: 1/1;
+  grid-column: auto;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid white;
 }
 
 .checkout-complete-title > h2 {
-    color: var(--heading1-color);
-    font-size: 4vh;
-    font-family: var(--heading1-font-family);
-    font-weight: 700;
-    letter-spacing: var(--general-letter-spacing);
-    text-decoration: var(--general-text-decoration);
-    text-transform: var(--general-text-transform);
+  color: var(--heading1-color);
+  font-size: 4vh;
+  font-family: var(--heading1-font-family);
+  font-weight: 700;
+  letter-spacing: var(--general-letter-spacing);
+  text-decoration: var(--general-text-decoration);
+  text-transform: var(--general-text-transform);
 }
 
 .check-icon {
-    grid-row: 2/2;
-    grid-column: auto;
+  grid-row: 2/2;
+  grid-column: auto;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    margin: 0px;
-    padding: 0px;
+  margin-top: 10px;
+  padding: 0px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .check-icon i {
-    color: rgba(130, 202, 146, 0.5);
-    font-size: 25vh;
-    border: none;
+  color: rgba(130, 202, 146, 0.5);
+  font-size: 25vh;
+  border: none;
 }
 
 .payment-confirmed {
-    grid-row: 3/3;
-    grid-column: auto;
+  grid-row: 3/3;
+  grid-column: auto;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .payment-confirmed P {
-    color: var(--heading1-color);
-    font-size: 3vh;
-    font-family: var(--heading2-font-family);
-    font-weight: 700;
-    letter-spacing: var(--general-letter-spacing);
-    text-decoration: var(--general-text-decoration);
-    text-transform: var(--general-text-transform);
+  color: var(--heading1-color);
+  font-size: 3vh;
+  font-family: var(--heading2-font-family);
+  font-weight: 700;
+  letter-spacing: var(--general-letter-spacing);
+  text-decoration: var(--general-text-decoration);
+  text-transform: var(--general-text-transform);
 }
 
 .vip-register {
-    grid-row: 4/4;
-    grid-column: auto;
+  grid-row: 4/4;
+  grid-column: auto;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vip-register P {
-    color: var(--heading1-color);
-    font-size: 1.5rem;
-    font-family: var(--heading2-font-family);
-    font-weight: 700;
-    letter-spacing: var(--general-letter-spacing);
-    text-decoration: var(--general-text-decoration);
-    text-transform: var(--general-text-transform);
+  color: var(--heading1-color);
+  font-size: 1.5rem;
+  font-family: var(--heading2-font-family);
+  font-weight: 700;
+  letter-spacing: var(--general-letter-spacing);
+  text-decoration: var(--general-text-decoration);
+  text-transform: var(--general-text-transform);
 }
 
 @media (max-width: 1000px) {
-    /*Tablet*/
+  /*Tablet*/
 
-    .checkout-complete .checkout-complete-title h2 {
-        font-size: 1.4rem;
-    }
+  .checkout-complete .checkout-complete-title h2 {
+    font-size: 1.4rem;
+  }
 
-    .checkout-complete  .check-icon i {
-        color: rgba(130, 202, 146, 0.5);
-        font-size: 20vh;
-    }
+  .checkout-complete .check-icon i {
+    color: rgba(130, 202, 146, 0.5);
+    font-size: 20vh;
+  }
 
-    .checkout-complete .payment-confirmed p {
-        font-size: 1.8rem;
-    }
+  .checkout-complete .payment-confirmed p {
+    font-size: 1.8rem;
+  }
 
-    .checkout-complete .vip-register p {
-        font-size: 1.2rem;
-        text-align: center;
-    }
+  .checkout-complete .vip-register p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-    .checkout-complete .download-button .account-button {
-        width: 40vw;
-        text-align: center;
-    }
+  .checkout-complete .download-button .account-button {
+    width: 40vw;
+    text-align: center;
+  }
 
-    .checkout-complete .continue-button .account-button {
-        width: 40vw;
-        text-align: center;
-    }
+  .checkout-complete .continue-button .account-button {
+    width: 40vw;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
-    /* Mobile */
+  /* Mobile */
 
-    
-    .checkout-complete .checkout-complete-title h2 {
-        font-size: 1rem;
-    }
+  .checkout-complete .checkout-complete-title h2 {
+    font-size: 1rem;
+  }
 
-    .checkout-complete  .check-icon i {
-        color: rgba(130, 202, 146, 0.5);
-        font-size: 15vh;
-    }
+  .checkout-complete .check-icon i {
+    color: rgba(130, 202, 146, 0.5);
+    font-size: 15vh;
+  }
 
-    .checkout-complete .payment-confirmed p {
-        font-size: 1.3rem;
-        text-align: center;
-    }
+  .checkout-complete .payment-confirmed p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 
-    .checkout-complete .vip-register p {
-        font-size: 1rem;
-        text-align: center;
-    }
+  .checkout-complete .vip-register p {
+    font-size: 1rem;
+    text-align: center;
+  }
 
-    .checkout-complete .download-button .account-button {
-        width: 40vw;
-        text-align: center;
-    }
+  .checkout-complete .download-button .account-button {
+    width: 40vw;
+    text-align: center;
+  }
 
-    .checkout-complete .continue-button .account-button {
-        width: 40vw;
-        text-align: center;
-    }
-    .checkout-complete .info-span {
-        font-size: 0.6rem;
-    }
-
+  .checkout-complete .continue-button .account-button {
+    width: 40vw;
+    text-align: center;
+  }
+  .checkout-complete .info-span {
+    font-size: 0.6rem;
+  }
 }
