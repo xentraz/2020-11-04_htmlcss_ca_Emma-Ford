@@ -128,7 +128,7 @@
   padding: 0px;
   margin: 0px;
 
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.45);
   box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.45);
 
   display: grid;
@@ -188,6 +188,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .game-title h2 {
