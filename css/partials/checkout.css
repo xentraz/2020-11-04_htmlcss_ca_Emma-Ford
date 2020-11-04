@@ -36,7 +36,6 @@
 }
 
 .checkout .tabcontent {
-    /* border-left: 2px solid white; */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
 
@@ -101,7 +100,6 @@
     
     display: grid;
     grid-template-rows: 8.5vh 29.75vh 29.75vh 6.375vh 9.375vh;
-    /* grid-row-gap: 1vh; */
 
     background-color: rgba(0, 0, 0, 0.85);
 
@@ -137,7 +135,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px solid red; */
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: solid 1px rgba(255, 255, 255, 0.445);
 
@@ -156,8 +153,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px rebeccapurple solid; */
-
     background-image: url(/img/overwatch-2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -173,10 +168,6 @@
     width: 100%;
 
     padding: 0px;
-
-    /* text-align: center; */
-
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .game-title h2 {
@@ -201,8 +192,6 @@
     width: 100%;
 
     padding: 0px;
-    /* text-align: center; */
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .point p {
@@ -289,7 +278,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px solid red; */
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: solid 1px rgba(255, 255, 255, 0.445);
 
@@ -308,8 +296,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px rebeccapurple solid; */
-
     background-image: url(/img/arksurvivalevolved.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -326,10 +312,6 @@
     width: 100%;
 
     padding: 0px;
-
-    /* text-align: center; */
-
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 
@@ -341,8 +323,6 @@
     width: 100%;
 
     padding: 0px;
-    /* text-align: center; */
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .checked-game-2 .game-price {
@@ -419,8 +399,6 @@
 
     margin: 0px;
     padding: 0px;
-
-    /* border: 1px solid orange; */
 
     display: grid;
     grid-template-columns: 5.5vw 9vw 9vw 9vw 9vw 5.5vw;

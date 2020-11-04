@@ -43,7 +43,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px red solid; */
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.85);
     background-color: rgba(0, 0, 0, 0.85);
 
@@ -141,8 +140,6 @@ label {
     letter-spacing: var(--general-letter-spacing);
     text-decoration: var(--general-text-decoration);
     text-transform: uppercase;
-
-    /* align-self: flex-start; */
 }
 
 .account-surname {
@@ -272,7 +269,6 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
 
   
@@ -301,8 +297,6 @@ label {
     font-family: var(--general-font-family);
     text-decoration: var(--general-text-decoration);
     font-weight: 400;
-
-    /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
 }
   
 .account-button:focus {
@@ -365,8 +359,7 @@ label {
 
     margin: 0px;
     padding: 0px;
-
-    /* border: 1px red solid; */
+    
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.85);
     background-color: rgba(0, 0, 0, 0.85);
 

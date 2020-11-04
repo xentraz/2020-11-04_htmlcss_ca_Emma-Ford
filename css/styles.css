@@ -21,10 +21,8 @@
 
   --white-opacity: rgba(255, 255, 255, 0.445);
   --black-opacity: rgba(0, 0, 0, 0.75);
-  /* Come back to black opacity */
 
   --general-font-family: "Lato", sans-serif;
-  /* Come back to font family */
   --general-text-transform: uppercase;
   --general-font-weight: 300;
   --general-letter-spacing: 1px;

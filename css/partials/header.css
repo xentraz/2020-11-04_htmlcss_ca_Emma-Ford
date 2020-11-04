@@ -203,7 +203,6 @@ header ul > li > a.logout:hover::before {
     float: left;
     background-color: var(--header-footer-color);
     display: block;
-    /* position: relative; */
     z-index: 9999;
   }
 

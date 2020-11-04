@@ -119,7 +119,6 @@
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    /* text-transform: uppercase; */
 }
 
 .street-address {
@@ -273,8 +272,6 @@
     height: 80%;
     width: 80%;
 
-    /* border: aliceblue 1px solid; */
-
     display: grid;
     grid-template-rows: 10% 65% 10% 15%;
     grid-template-columns: auto;
@@ -292,7 +289,6 @@
     background-color: rgba(0, 0, 0, 0.75);
 
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -464,7 +460,6 @@
 
     .contact-footer {
         bottom: 0px;
-        /* position: absolute; */
     }
 
     .contact-us-background {
