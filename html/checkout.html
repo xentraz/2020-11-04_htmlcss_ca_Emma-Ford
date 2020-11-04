@@ -111,10 +111,10 @@
             </section>
             <div class="payment-info">
                 <div class="payment-tab">
-                    <button class="tablinks" onclick="openTab(event, 'visa')" id="defaultOpen"><i class="fab fa-cc-visa"></i> Visa</button>
-                    <button class="tablinks" onclick="openTab(event, 'american-express')"><i class="fab fa-cc-mastercard"></i> Master Card</button>
-                    <button class="tablinks" onclick="openTab(event, 'paypal')"><i class="fab fa-cc-paypal"></i> PayPal</button>
-                    <button class="tablinks" onclick="openTab(event, 'apple-pay')"><i class="fab fa-cc-apple-pay"></i> Apple Pay</button>
+                    <button class="tablinks" onclick="openTab(event, 'visa')" id="defaultOpen"><i class="fab fa-cc-visa"></i> <span> Visa</span></button>
+                    <button class="tablinks" onclick="openTab(event, 'american-express')"><i class="fab fa-cc-mastercard"></i><span>Master Card</span></button>
+                    <button class="tablinks" onclick="openTab(event, 'paypal')"><i class="fab fa-cc-paypal"></i><span>PayPal</span></button>
+                    <button class="tablinks" onclick="openTab(event, 'apple-pay')"><i class="fab fa-cc-apple-pay"></i><span>Apple Pay</span></button>
                 </div>
                 <div id="visa" class="tabcontent">
                     <div class="visa-grid">
@@ -169,7 +169,7 @@
     </div>
   </main>
   
-  <footer>
+  <footer class="checkout-footer">
     <div class="footer-container">
       <div class="contact-us">
         <ul>
@@ -204,7 +204,5 @@
       </div>
     </div>
   </footer>
-  <script src="js/header.js"></script>
-  <!-- <script src="/js/footer-fix.js"></script> -->
 </body>
 </html>

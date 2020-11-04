@@ -202,12 +202,16 @@ header ul > li > a.logout:hover::before {
     width: 100%;
     float: left;
     background-color: var(--header-footer-color);
+    display: block;
+    /* position: relative; */
+    z-index: 9999;
   }
 
   header ul li ul {
     display: block;
     width: 100%;
     display: static;
+    position: absolute;
   }
 
   header ul li ul li a {
@@ -233,17 +237,6 @@ header ul > li > a.logout:hover::before {
 
   .dropdown {
     display: none;
-  }
-}
-
-@media (max-width: 901px) {
-  .logo {
-    padding-right: 30px;
-  }
-
-  .navbar {
-    width: 100%;
-    z-index: 999;
   }
 }
 

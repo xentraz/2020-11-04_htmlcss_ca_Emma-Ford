@@ -80,10 +80,9 @@ main .image-container {
   grid-column: 2/2;
 
   margin: 0;
-  padding: 0;
+  padding-bottom: 10px;
 
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -92,6 +91,11 @@ main .image-container {
 
   font-family: var(--logo-font-family);
   font-size: 1rem;
+}
+
+.heading-1 h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .browse-button {
@@ -199,10 +203,36 @@ main .image-container {
 
 @media (max-width: 991px) {
   /*Tablet*/
+  
+  /* Same as Desktop, works well */
+}
 
   
-}
-  
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   /* Mobile */
+
+  .about-text {
+    font-size: 0.6rem;
+  }
+  
+  .about-text span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    font-family: var(--logo-font-family);
+  }
+
+  .heading-1 {
+    font-size: 0.6rem;
+  }
+
+  .more-about-text {
+    font-size: 0.6rem;
+  }
+  
+  .more-about-text span {
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+
 }

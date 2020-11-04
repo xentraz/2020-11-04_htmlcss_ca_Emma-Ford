@@ -7,6 +7,7 @@
     background-position: center;
     height: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .checkout-grid {
@@ -20,6 +21,7 @@
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 5vh 85vh 10vh;
     background-color:  rgba(255, 255, 255, 0.445);
+    position: relative;
 }
 
 .checkout-grid .checkout {
@@ -209,7 +211,7 @@
     margin: 0px;
     margin-right: 10px;
 
-    color:  rgba(16, 46, 17, 0.829);
+    color:  rgba(66, 146, 69, 0.829);
     text-decoration: none;
     letter-spacing: 2px;
     font-family: "Lato", sans-serif;
@@ -682,4 +684,281 @@ input {
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media (max-width: 1020px) {
+    /*Tablet*/
+
+    .game-list .order-summary h1 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .payment-tab button {
+        font-size: 0.6rem;
+    }
+
+    .payment-tab button i {
+        font-size: 2rem;
+    }
+
+    .visa-grid .save-info {
+        font-size: 0.6rem;
+    }
+
+    .visa-grid .save-info-2 {
+        font-size: 0.6rem;
+    }
+
+    .info-span {
+        font-size: 0.8rem;
+    }
+
+    .visa-grid .payment-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .checkout .game-title {
+        display: inline-flex;
+        justify-content: start;
+    }
+
+    .checkout h2 {
+        font-size: 0.7rem;
+    }
+
+    .checked-game-1 .total p {
+        font-size: 0.6rem;
+    }
+
+    .checked-game-1 .game-price p {
+        font-size: 0.6rem;
+    }
+
+    .checked-game-2 .total p {
+        font-size: 0.6rem;
+    }
+
+    .checked-game-2 .game-price p {
+        font-size: 0.6rem;
+    }
+
+    .total-points p {
+        font-size: 0.8rem;
+    }
+
+    .total-price p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    /* Mobile */
+
+    .game-list .order-summary h1 {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+
+    .game-list .checked-game-1 .game-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .game-list .checked-game-2 .game-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .game-list .game-title h2{
+        font-size: 0.4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .game-list .point p {
+        font-size: 0.3rem;
+    }
+
+    .game-list .total p {
+        font-size: 0.4rem;
+    }
+
+    .game-list .total-points p {
+        font-size: 0.6rem;
+    }
+
+    .game-list .total-price p {
+        font-size: 0.7rem;
+    }
+
+    .payment-tab span {
+        display: none;
+    }
+
+    .payment-tab button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-left: 5px;
+        margin: 0px;
+    }
+
+    .payment-tab button i {
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .tabcontent .visa-grid {
+        height: 100%;
+        width: 100%;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        /* border: 1px solid orange; */
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    }
+
+    .visa-grid .payment-title {
+        grid-row: 1/1;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .payment-title h2 {
+        font-size: 0.7rem;
+    }
+
+    .visa-grid input {
+        width: 30vw;
+    }
+
+    .visa-grid .info-button{
+        width: 30vw;
+    }
+
+    .info-span {
+        font-size: 0.8rem;
+    }
+
+    .visa-grid .save-info {
+        font-size: 0.5rem;
+
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .visa-grid .save-info-2 {
+        font-size: 0.5rem;
+    }
+
+    .visa-grid .card-number {
+        grid-row: 2/2;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .month {
+        grid-row: 3/3;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .year {
+        grid-row: 4/4;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .cvv {
+        grid-row: 5/5;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .post-code {
+        grid-row: 6/6;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .save-details {
+        grid-row: 7/7;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .cancel-button {
+        grid-row: 8/8;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .visa-grid .checkout-button {
+        grid-row: 9/9;
+        grid-column: 1;
+
+        height: 100%;
+        width: 100%;
+
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+    }
 }

@@ -3,148 +3,161 @@ box-sizing: border-box;
 }
 
 .account-background {
-margin: 0px;
-padding: 0px;
-height: 100%;
-width: 100%;
-background-image: url(/img/controller-bg.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/controller-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .account-grid {
-margin: 0px;
-/* padding-top: 0px; */
-display: grid;
-width: 100%;
-grid-template-columns: 10% 80% 10%;
-grid-template-rows: 5vh 85vh 5vh;
-background-color: rgba(255, 255, 255, 0.445);
-height: 100%;
+    margin: 0px;
+    /* padding-top: 0px; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5vh 85vh 5vh;
+    background-color: rgba(255, 255, 255, 0.445);
+    height: 100%;
 }
 
 .account-settings {
-grid-row: 2/2;
-grid-column: 2/2;
-background-color: rgba(0, 0, 0, 0.75);
-box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.78);
+    grid-row: 2/2;
+    grid-column: 2/2;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.78);
 }
 
 .sidebar-tab {
-float: left;
-width: 30%;
-border-right: 0px solid #393939;
+    float: left;
+    width: 30%;
+    border-right: 0px solid #393939;
 }
 
 .sidebar-tab button {
-display: block;
+    display: block;
 
-color: var(--text-color);
-letter-spacing: var(--general-letter-spacing);
-font-family: var(--li-a-font-family);
-font-weight: 700;
-text-decoration: var(--li-a-text-decoration);
-text-transform: var(--li-a-text-transform);
-font-size: 0.7rem;
-/* background-color: #0E0E0E; */
-background-color: rgba(0, 0, 0, 0.75);
+    color: var(--text-color);
+    letter-spacing: var(--general-letter-spacing);
+    font-family: var(--li-a-font-family);
+    font-weight: 700;
+    text-decoration: var(--li-a-text-decoration);
+    text-transform: var(--li-a-text-transform);
+    font-size: 0.7rem;
+    /* background-color: #0E0E0E; */
+    background-color: rgba(0, 0, 0, 0.75);
 
-align-content: center;
+    align-content: center;
 
-width: 100%;
-border: none;
-outline: none;
+    width: 100%;
+    border: none;
+    outline: none;
 
-text-align: left;
-padding: 15px;
-cursor: pointer;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
 
-transition: 0.2s;
-height: 10.625vh;
+    transition: 0.2s;
+    height: 10.625vh;
 }
 
 .sidebar-tab button:hover {
-/* background-color: #393939; */
-background-color: rgba(0, 0, 0, 0.75);
-border-bottom: 1px solid #ffffff;
+    /* background-color: #393939; */
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid #ffffff;
 }
 
 .sidebar-tab button.active {
-background-color: #393939;
-background-color: rgba(0, 0, 0, 0.75);
-border-bottom: 1px solid #ffffff;
+    background-color: #393939;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid #ffffff;
 }
 
 .tabcontent {
-float: right;
-/* border: 1px solid #ccc; */
+    float: right;
+    /* border: 1px solid #ccc; */
 
-margin: 0px;
-padding: 0px;
+    margin: 0px;
+    padding: 0px;
 
-width: 70%;
-height: 85vh;
+    width: 70%;
+    height: 85vh;
 
-color: #ccc;
-/* background-color: #0E0E0E; */
-/* border: 3px solid #1F1F1F; */
+    color: #ccc;
+    /* background-color: #0E0E0E; */
+    /* border: 3px solid #1F1F1F; */
 }
 
 .tabcontent .settings-grid {
-margin: 0px;
-padding: 0px;
-color: #ccc;
-/* background-color: #0E0E0E; */
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 15vh 14vh 17vh 22vh 16vh;
+    margin: 0px;
+    padding: 0px;
+    color: #ccc;
+    /* background-color: #0E0E0E; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 12vh 18vh 22vh 16vh;
 }
 
 .tabcontent .settings-grid .settings-heading {
-grid-row: 1/1;
-grid-column: 1/-1;
-margin-left: 20px;
-margin-top: 35px;
-padding: 0px;
+    grid-row: 1/1;
+    grid-column: 1/-1;
 
-color: var(--heading1-color);
-font-size: var(--heading2-font-size);
-font-family: var(--heading1-font-family);
-font-weight: 700;
-letter-spacing: var(--general-letter-spacing);
-text-decoration: var(--general-text-decoration);
-text-transform: var(--general-text-transform);
+    margin: 0px;
+    padding-bottom: 5px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--heading1-color);
+    font-size: 2rem;
+    font-family: var(--heading1-font-family);
+    font-weight: 700;
+    letter-spacing: var(--general-letter-spacing);
+    text-decoration: var(--general-text-decoration);
+    text-transform: var(--general-text-transform);
 }
 
 .tabcontent .settings-grid .settings-info {
-grid-row: 1/1;
-grid-column: 1/-1;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 65px;
-padding: 0px;
+    grid-row: 1/1;
+    grid-column: 1/3;
 
-color: var(--heading1-color);
-font-size: var(--general-font-size);
-font-family: var(--heading1-font-family);
-font-weight: var(--general-font-weight);
-letter-spacing: var(--general-letter-spacing);
-text-decoration: var(--general-text-decoration);
+    margin: 0px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    text-align: center;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    color: var(--heading1-color);
+    font-size: var(--general-font-size);
+    font-family: var(--heading1-font-family);
+    font-weight: var(--general-font-weight);
+    letter-spacing: var(--general-letter-spacing);
+    text-decoration: var(--general-text-decoration);
 }
 
 .account-info {
 grid-row: 2/2;
 grid-column: 1/-1;
+
 margin-left: 20px;
 margin-top: 0px;
+
 padding: 0px;
+
 display: grid;
 grid-template-columns: 21vw 5vw 21vw 5vw;
-grid-template-rows: 3.5vh 10.5vh;
+grid-template-rows: 3.5vh 8vh;
 }
 
-.account-info h4 {
+.account-info .heading4 {
 grid-row: 1/1;
 grid-column: 1/-1;
 
@@ -238,7 +251,7 @@ margin-top: 0px;
 padding: 0px;
 display: grid;
 grid-template-columns: 21vw 5vw 21vw 5vw;
-grid-template-rows: 3.5vh 3.5vh 8vh;
+grid-template-rows: 3vh 6vh 7vh;
 grid-row-gap: 1vh;
 }
 
@@ -259,7 +272,7 @@ margin-top: 0vh;
 .privacy-policy {
 grid-row: 2/2;
 grid-column: 1/-1;
-margin-top: 55vh;
+/* margin-top: 55vh; */
 
 color: var(--heading1-color);
 font-size: 0.6rem;
@@ -272,7 +285,8 @@ margin-top: 0vh;
 }
 
 .privacy-policy span {
-color: var(--green-text-color);
+color: rgba(88, 172, 106, 0.75);
+font-weight: 700;
 }
 
 .privacy-policy i {
@@ -442,7 +456,7 @@ letter-spacing: var(--general-letter-spacing);
 text-decoration: var(--general-text-decoration);
 }
 
-.post-code {
+.address-post-code {
 grid-row: 3/3;
 grid-column: 3/3;
 
@@ -553,4 +567,398 @@ font-weight: var(--general-font-weight);
 letter-spacing: var(--general-letter-spacing);
 text-decoration: var(--general-text-decoration);
 text-transform: var(--general-text-transform);
+}
+
+
+@media (max-width: 780px) {
+    /*Tablet*/
+
+    .tabcontent .settings-grid .settings-info {
+        font-size: 0.8rem;
+    }
+
+    .account-info .username {
+        width: 20vw;
+    }
+
+    .account-info .email {
+        width: 20vw;
+    }
+
+    .personal-details .firstname {
+        width: 20vw;
+    }
+
+    .personal-details .surname {
+        width: 20vw;
+    }
+
+    .edit-button1, .edit-button2, .edit-button3, .edit-button4 {
+        height: 4vh;
+        width: 4vw;
+
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+
+    .tabcontent input {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 685px) {
+    .privacy-policy {
+        font-size: 0.6rem;
+    }
+
+    .save-button {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* Mobile */
+    
+    .account-background {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        background-image: url(/img/controller-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .account-grid {
+        margin: 0px;
+        /* padding-top: 0px; */
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 5vh 120vh 5vh;
+        background-color: rgba(255, 255, 255, 0.445);
+        height: 100%;
+    }
+
+    .sidebar-tab button {
+        font-size: 0.5rem;
+
+        width: 100%;
+        border: none;
+        outline: none;
+    
+        text-align: left;
+        cursor: pointer;
+    
+        transition: 0.2s;
+        height: 15vh;
+
+        padding-left: 5px;
+    }
+
+    .tabcontent .settings-grid {
+        margin: 0px;
+        padding: 0px;
+        color: #ccc;
+        /* background-color: #0E0E0E; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 10vh 25vh 25vh 33vh 17vh;
+    }
+
+    .tabcontent .settings-grid .settings-heading {
+        grid-row: 1/1;
+        grid-column: 1/3;
+
+        display: inline-flex;
+        justify-content:  center;
+        align-content: center;
+
+        padding: 0px;
+        margin: 0px;
+
+        font-size: 1rem;
+    }
+
+    .tabcontent .settings-grid .settings-info {
+        grid-row: 2/2;
+        grid-column: 1/3;
+
+        display: inline-flex;
+        justify-content: center;
+
+        padding: 0px;
+        margin: 0px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    }
+
+    .account-info {
+        grid-row: 3/3;
+
+        height: 100%;
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+
+        display: grid;
+        grid-template-rows: 5vh 10vh 10vh;
+        grid-template-columns: 1fr 0.3fr;
+    }
+
+    .account-info .heading4 {
+        grid-row: 1/1;
+        grid-column: 1/4;
+
+        padding: 0px;
+        margin-top: 10px;
+
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .account-info .username {
+        grid-row: 2/2;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 120px;
+    }
+
+    .account-info .edit-button1 {
+        grid-row: 2/2;
+        grid-column: 2/2;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 0.8rem;
+    }
+
+    .account-info .email {
+        grid-row: 3/3;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+
+        width: 120px;
+    }
+
+    .account-info .edit-button2 {
+        grid-row: 3/3;
+        grid-column: 2/2;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 0.8rem;
+    }
+
+    .personal-details {
+        grid-row: 4/4;
+
+        height: 100%;
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+
+        display: grid;
+        grid-template-rows: 3vh 9vh 5vh 5vh;
+        grid-template-columns: 1fr 0.3fr;
+    }
+
+    .personal-details .heading4 {
+        grid-row: 1/1;
+        grid-column: 1/4;
+
+        padding: 0px;
+        margin-top: 10px;
+
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .personal-details .privacy-policy {
+        grid-row: 2/2;
+        grid-column: 1/-1;
+
+        padding: 0px;
+        margin: 0px;
+
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .personal-details .firstname {
+        grid-row: 3/3;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 120px;
+    }
+
+    .personal-details .edit-button3 {
+        grid-row: 3/3;
+        grid-column: 2/2;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 0.8rem;
+    }
+
+    .personal-details .surname {
+        grid-row: 4/4;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 120px;
+    }
+
+    .personal-details .edit-button4 {
+        grid-row: 4/4;
+        grid-column: 2/2;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 0.8rem;
+    }
+
+    .address {
+        grid-row: 5/5;
+
+        height: 100%;
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vh 5vh 5vh 5vh 5vh;
+    }
+
+    .address .heading4 {
+        grid-row: 1/1;
+        grid-column: 1/-1;
+
+        padding: 0px;
+        margin-top: 10px;
+
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .address .address1 {
+        grid-row: 2/2;
+        grid-column: 1/-1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 140px;
+    }
+
+    .address .address2 {
+        grid-row: 3/3;
+        grid-column: 1/-1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 140px;
+    }
+
+    .address .city {
+        grid-row: 4/4;
+        grid-column: 1/-1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 140px;
+    }
+
+    .address .address-post-code {
+        grid-row: 5/5;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 80px;
+    }
+
+    .address .region {
+        grid-row: 5/5;
+        grid-column: 2/2;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 80px;
+    }
+
+    .settings-grid .country-grid {
+        grid-row: 6/6;
+
+        height: 100%;
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+
+        display: grid;
+        grid-template-rows: 4vh 6.5vh 6.5vh;
+        grid-template-columns: 1fr;
+    }
+
+    .country-grid .heading4 {
+        grid-row: 1/1;
+        grid-column: 1/1;
+
+        padding: 0px;
+        margin-top: 5px;
+
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .country-grid .country {
+        grid-row: 2/2;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 140px;
+    }
+
+    .country-grid .save-button {
+        grid-row: 3/3;
+        grid-column: 1/1;
+
+        margin: 0px auto;
+        padding: 0px;
+        
+        width: 140px;
+    }
+
+    .tabcontent input {
+        font-size: 0.8rem;
+    }
+    
 }

@@ -602,20 +602,19 @@
         margin: 0px;
         padding: 0px;
     
-        height: 135vh;
+        height: 167vh;
         width: 100%;
     }
 
     .contact-footer {
         bottom: 0px;
-        /* position: relative; */
     }
 
     .contact-us-background {
         margin: 0px;
         padding: 0px;
     
-        height: 135vh;
+        height: 167vh;
         width: 100%;
     
         background-image: url(/img/controller-bg.jpg);
@@ -623,6 +622,8 @@
         background-size: cover;
         background-position: center;
         box-sizing: border-box;
+
+        position: absolute;
     }
 
     .contact-us-grid {
@@ -630,15 +631,19 @@
         padding: 0px;
 
         width: 100%;
-        height: 135vh;
+        height: 167vh;
 
         display: grid;
         grid-template-columns: 8% 84% 8%;
-        grid-template-rows: 3vh 5vh 60vh 60vh 30vh 10vh;
+        grid-template-rows: 3vh 7vh 60vh 60vh 30vh 2vh;
         grid-column-gap: 1.5%;
         grid-row-gap: 1vh;
 
         background-color:  rgba(255, 255, 255, 0.445);
+    }
+
+    .card-heading h2 {
+        font-size: 0.7rem;
     }
 
     .contact-heading {
@@ -658,6 +663,15 @@
         background-color: rgba(0, 0, 0, 0.85);
         box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.75);
     }
+
+    .contact-heading h1 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        word-wrap: normal;
+
+        font-size: 0.8rem;
+    }
     
     .contact-address {
         grid-row: 3/3;
@@ -675,6 +689,10 @@
         display: grid;
         grid-template-rows: 1fr 3fr 1fr 1fr 1fr 3fr;
         grid-template-columns: auto;
+    }
+
+    .contact-main p {
+        font-size: 0.7rem;
     }
 
     .contact-chat {
@@ -696,7 +714,7 @@
     }
 
     .live-chat-info input {
-        width: 30vw;
+        width: 45vw;
         color: rgb(255, 255, 255);
     }
 
@@ -735,8 +753,17 @@
     .contact-social p span:hover {
         text-decoration: underline;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-social i {
+        letter-spacing: 2px;
+    }
+
+    .contact-insta {
+        letter-spacing: 2px;
+
+        padding-left: 10px;
     }
 }
-    
-}
+

@@ -1,21 +1,21 @@
 .search-main {
-    height: 142vh;
-    width: 100%;
-
-    padding: 0px;
-    margin: 0px 
-}
-
-.search-footer {
-    bottom: 0px;
-}
-
-.search-background {
-    height: 100%;
+    height: 145vh;
     width: 100%;
 
     padding: 0px;
     margin: 0px;
+}
+
+.search-footer {
+    bottom: 0px;
+    height: 100%;
+}
+
+.search-background {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
 
     background-image: url(/img/controller-bg.jpg);
     background-position: center;
@@ -36,6 +36,7 @@
 
 .search-grid {
     width: 100%;
+    height: 100%;
 
     padding: 0px;
     margin: 0px;
@@ -49,13 +50,16 @@
 .categories-bar {
     grid-row: 1/1;
     grid-column: 1/-1;
+
+    /* height: 100%; */
+    width: 100%;
 }
 
 .search-title {
     grid-row: 3/3;
     grid-column: 2/5;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -90,7 +94,7 @@
     grid-row: 3/3;
     grid-column: 4/4;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -123,7 +127,7 @@
     grid-row: 4/4;
     grid-column: 2/2;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -141,7 +145,7 @@
     grid-row: 1/1;
     grid-column: 1/1;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -156,7 +160,7 @@
     grid-row: 1/1;
     grid-column: 1/-1;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -181,11 +185,11 @@
 }
 
 .info-button {
-    height: 100%;
+    /* height: 100%; */
 }
 
 .game-title {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -203,7 +207,7 @@
 }
 
 .search-game-grid .info-button {
-    height: 90%;
+    /* height: 90%; */
     width: 100%;
 
     padding: 0px;
@@ -214,7 +218,7 @@
     grid-row: 1/1;
     grid-column: 3/3;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -228,7 +232,7 @@
     grid-row: 1/1;
     grid-column: 5/5;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -242,7 +246,7 @@
     grid-row: 3/3;
     grid-column: 1/1;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -256,7 +260,7 @@
     grid-row: 3/3;
     grid-column: 3/3;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -270,7 +274,7 @@
     grid-row: 3/3;
     grid-column: 5/5;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -284,7 +288,7 @@
     grid-row: 4/4;
     grid-column: 1/1;
 
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -305,7 +309,7 @@
     grid-column: 4/4;
 
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 
     padding: 0px;
     margin: 0px;
@@ -318,7 +322,7 @@
 }
 
 .search-categories {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -350,7 +354,7 @@
 }
 
 .search-features {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -359,4 +363,180 @@
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media (max-width: 1020px) {
+    /* Tablet */
+
+    .game-title h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .search-sort p {
+        font-size: 0.5rem;
+    }
+
+    .search-categories h3 {
+        font-size: 0.68rem;
+    }
+
+    .search-categories p {
+        font-size: 0.5rem;
+    }
+
+    .search-features h3 {
+        font-size: 0.68rem;
+    }
+
+    .search-features p {
+        font-size: 0.5rem;
+    }
+
+    .search-grid .info-button .info-span {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .search-game-grid .more-button .info-button {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 742px) {
+    /* Mobile */
+
+    .search-grid {
+        width: 100%;
+        height: 100%;
+    
+        padding: 0px;
+        margin: 0px;
+    
+        display: grid;
+        grid-template-columns: 10% 54% 1% 25% 10%;
+        grid-template-rows: 10vh 2vh 7vh 90vh 10vh;
+        grid-row-gap: 1vh;
+    }
+
+    .search-title h1 {
+        font-size: 1rem;
+
+        justify-content: start;
+        
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .search-game-grid {
+        grid-row: 4/4;
+        grid-column: 2/2;
+    
+        height: 120vh;
+        width: 100%;
+    
+        padding: 0px;
+        margin: 0px;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75);
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+        grid-row-gap: 0.2fr;
+    }
+
+    .result-game-1 {
+        grid-row: 1/1;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .result-game-2 {
+        grid-row: 2/2;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .result-game-3 {
+        grid-row: 3/3;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .result-game-4 {
+        grid-row: 4/4;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .result-game-5 {
+        grid-row: 5/5;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .result-game-6 {
+        grid-row: 6/6;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .more-button {
+        grid-row: 7/7;
+        grid-column: 1/1;
+
+        height: 100%;
+        width: 100%;
+
+        padding: 0px;
+        margin: 0px;
+
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .more-button .info-button {
+        height: 80%;
+    }
+
+    .search-sidebar {
+        height: 120vh;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
