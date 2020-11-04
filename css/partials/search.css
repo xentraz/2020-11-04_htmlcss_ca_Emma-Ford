@@ -51,7 +51,6 @@
     grid-row: 1/1;
     grid-column: 1/-1;
 
-    /* height: 100%; */
     width: 100%;
 }
 
@@ -59,7 +58,6 @@
     grid-row: 3/3;
     grid-column: 2/5;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -94,13 +92,10 @@
     grid-row: 3/3;
     grid-column: 4/4;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
     margin: 0px;
-
-    /* background-color: rgba(0, 0, 0, 0.75); */
 }
 
 .search-sort p {
@@ -127,7 +122,6 @@
     grid-row: 4/4;
     grid-column: 2/2;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -145,7 +139,6 @@
     grid-row: 1/1;
     grid-column: 1/1;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -160,7 +153,6 @@
     grid-row: 1/1;
     grid-column: 1/-1;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -184,12 +176,7 @@
     margin: 0px;
 }
 
-.info-button {
-    /* height: 100%; */
-}
-
 .game-title {
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -207,7 +194,6 @@
 }
 
 .search-game-grid .info-button {
-    /* height: 90%; */
     width: 100%;
 
     padding: 0px;
@@ -218,7 +204,6 @@
     grid-row: 1/1;
     grid-column: 3/3;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -232,7 +217,6 @@
     grid-row: 1/1;
     grid-column: 5/5;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -246,7 +230,6 @@
     grid-row: 3/3;
     grid-column: 1/1;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -260,7 +243,6 @@
     grid-row: 3/3;
     grid-column: 3/3;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -274,7 +256,6 @@
     grid-row: 3/3;
     grid-column: 5/5;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -288,7 +269,6 @@
     grid-row: 4/4;
     grid-column: 1/1;
 
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -309,7 +289,6 @@
     grid-column: 4/4;
 
     height: 100%;
-    /* width: 100%; */
 
     padding: 0px;
     margin: 0px;
@@ -322,7 +301,6 @@
 }
 
 .search-categories {
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;
@@ -354,7 +332,6 @@
 }
 
 .search-features {
-    /* height: 100%; */
     width: 100%;
 
     padding: 0px;

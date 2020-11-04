@@ -8,13 +8,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
+}
 
-  /* background-color: rgba(255, 255, 255, 0.445); */
+.browse-footer {
+  bottom: 0;
+  position: relative;
 }
 
 .games-grid {
   height: 300vh;
-  /* border: solid 1px   red; */
   width: 100%;
 
   padding: 0px;
@@ -114,7 +116,6 @@
 
 .categories-bar ul li a {
   margin-inline-start: 26px;
-  /* margin: 0px; */
 
   font-size: var(--header-font-size);
   text-decoration: var(--li-a-text-decoration);
@@ -164,7 +165,6 @@
 
   grid-row: 2/2;
   grid-column: 2/2;
-  /* border: solid 1px   red; */
 
   display: grid;
   grid-template-columns: 5% 90% 5%;
@@ -203,7 +203,6 @@
 .image-slider h1 span {
   font-weight: 100;
   font-size: 1.6rem;
-  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75); */
 }
 
 .image-slider .next {
@@ -240,9 +239,6 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-
-  /* background-color: rgba(255, 255, 255, 0.445); */
-  /* background-color: rgba(0, 0, 0, 0.75); */
 }
 
 .image-slider .autoplay .featured-game {
@@ -265,8 +261,6 @@
   margin-left: 5px;
   margin-top: 5px;
 
-  /* border: blueviolet 1px solid; */
-
   background-image: url(/img/overwatch-2.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +278,6 @@
   margin-left: 5px;
   margin-top: 5px;
 
-  /* border: blueviolet 1px solid; */
 
   background-image: url(/img/GTA\ V.jpg);
   background-position: center;
@@ -303,8 +296,6 @@
   margin-left: 5px;
   margin-top: 5px;
 
-  /* border: blueviolet 1px solid; */
-
   background-image: url(/img/monsterhunterworld.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -322,8 +313,6 @@
   margin-left: 5px;
   margin-top: 5px;
 
-  /* border: blueviolet 1px solid; */
-
   background-image: url(/img/Horizon-Zero-Dawn.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -340,8 +329,6 @@
   width: 98%;
   margin-left: 5px;
   margin-top: 5px;
-
-  /* border: blueviolet 1px solid; */
 
   background-image: url(/img/arksurvivalevolved.jpg);
   background-position: center;
@@ -371,7 +358,6 @@
   height: 100%;
   width: 100%;
 
-  /* align-items: center; */
   text-align: center;
 
   font-size: 1.5rem;
@@ -432,8 +418,6 @@
   height: 100%;
   width: 100%;
 
-  /* border: blueviolet 1px solid; */
-
   display: flex;
   align-items: center;
 }
@@ -459,7 +443,6 @@
   height: 100%;
   width: 98%;
 
-  /* background: none; */
   background-color: rgba(0, 0, 0, 0.75);
   color: rgb(255, 255, 255);
 
@@ -477,8 +460,6 @@
   font-family: var(--general-font-family);
   text-decoration: var(--general-text-decoration);
   font-weight: 400;
-
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
 }
 
 .info-button:focus {
@@ -542,10 +523,6 @@
 
   margin: 0px;
   padding: 0px;
-
-  /* background-color: rgba(0, 0, 0, 0.75); */
-
-  /* border: 1px solid darkblue; */
 }
 
 .featured-title h2 {
@@ -572,10 +549,6 @@
   padding: 0px;
 
   text-align: start;
-
-  /* background-color: rgba(0, 0, 0, 0.75); */
-
-  /* border: steelblue 1px solid; */
 }
 
 .featured-game-description p {
@@ -588,7 +561,6 @@
   font-family: "Lato", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  /* text-transform: uppercase; */
 }
 
 .os-info {
@@ -603,7 +575,6 @@
 }
 
 .os-info > p {
-  /* margin-top: 50px; */
   padding: 0px;
   bottom: 0px;
 
@@ -627,8 +598,6 @@
   line-height: 5px;
   background-color: transparent;
   text-decoration: none;
-
-  /* text-align: center; */
 
   margin-top: 2vh;
 }
@@ -657,8 +626,6 @@
   padding: 0px;
   margin-left: 0px;
 
-  /* border: blue 1px solid; */
-
   background-image: url(/img/pegi-12.png);
   background-position: center;
   background-size: contain;
@@ -675,8 +642,6 @@
   margin: 10px auto;
   padding: 0px;
   margin-left: 0px;
-
-  /* border: blue 1px solid; */
 
   background-image: url(/img/pegi-18.png);
   background-position: center;
@@ -695,8 +660,6 @@
   padding: 0px;
   margin-left: 0px;
 
-  /* border: blue 1px solid; */
-
   background-image: url(/img/pegi-16.png);
   background-position: center;
   background-size: contain;
@@ -712,9 +675,6 @@
 
   margin: 0px;
   padding: 0px;
-
-  /* border: 1px solid green; */
-  /* background-color: rgba(0, 0, 0, 0.45); */
 
   display: grid;
   grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
@@ -762,7 +722,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -777,13 +736,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/intothebreach-cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .free-game-title {
@@ -897,7 +853,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -912,13 +867,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/Dota2-cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .free-games .free-game-3 {
@@ -931,7 +883,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -946,13 +897,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/CSgo-cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-releases {
@@ -964,10 +912,6 @@
 
   margin: 0px;
   padding: 0px;
-
-  /* border: 1px solid peru; */
-
-  /* background-color: rgba(0, 0, 0, 0.253); */
 
   display: grid;
   grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
@@ -1019,7 +963,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1034,13 +977,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/spellbreak.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-1 .new-game-title {
@@ -1166,7 +1106,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1181,13 +1120,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/avengers.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-2 .new-game-title {
@@ -1255,7 +1191,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1270,13 +1205,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/riskofrain.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-3 .new-game-title {
@@ -1344,7 +1276,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1359,13 +1290,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/crusaderkings].jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-4 .new-game-title {
@@ -1433,7 +1361,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1448,13 +1375,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/fallguys.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-5 .new-game-title {
@@ -1522,7 +1446,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1537,13 +1460,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/windbound.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .new-game-6 .new-game-title {
@@ -1661,10 +1581,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* border: 1px solid peru; */
-
-  /* background-color: rgba(0, 0, 0, 0.253); */
-
   display: grid;
   grid-template-columns: 0.002fr 1fr 1fr 1fr 0.002fr;
   grid-template-rows: 0.15fr 1fr 0fr 1fr 0.15fr;
@@ -1773,7 +1689,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1788,13 +1703,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/deathstranding.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-1 .used-game-title {
@@ -1860,7 +1772,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1875,13 +1786,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/terraria.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-2 .used-game-title {
@@ -1941,7 +1849,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -1956,13 +1863,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/rust.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-3 .used-game-title {
@@ -2022,7 +1926,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -2037,13 +1940,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/skyrim.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-4 .used-game-title {
@@ -2103,7 +2003,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -2118,13 +2017,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/thesims4.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-5 .used-game-title {
@@ -2184,7 +2080,6 @@
   margin: 0px;
   padding: 0px;
 
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.75); */
   background-color: rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -2199,13 +2094,10 @@
   height: 100%;
   width: 100%;
 
-  /* border: 1px solid green; */
-
   background-image: url(/img/reddeadredemption2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.5); */
 }
 
 .used-game-6 .used-game-title {
@@ -2390,7 +2282,6 @@
   
   .games-grid {
     height: 360vh;
-    /* border: solid 1px   red; */
     width: 100%;
   
     padding: 0px;
@@ -2421,7 +2312,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4vh 20vh 12vh 8vh;
-    /* grid-column-gap: 1vw; */
 
     overflow: hidden;
   }
@@ -2574,9 +2464,6 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px solid green; */
-    /* background-color: rgba(0, 0, 0, 0.45); */
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
@@ -2628,10 +2515,6 @@
   
     margin: 0px;
     padding: 0px;
-  
-    /* border: 1px solid peru; */
-  
-    /* background-color: rgba(0, 0, 0, 0.253); */
   
     display: grid;
     grid-template-columns: 1fr;
