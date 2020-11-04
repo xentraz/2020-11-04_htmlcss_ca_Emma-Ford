@@ -572,6 +572,11 @@
   cursor: pointer;
 }
 
+.save-button:hover {
+  color: #ffffff;
+  background-color: rgba(44, 83, 53, 0.739);
+}
+
 @media (max-width: 780px) {
   /*Tablet*/
 
