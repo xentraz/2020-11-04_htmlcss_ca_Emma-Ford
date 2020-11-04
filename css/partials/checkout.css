@@ -61,7 +61,7 @@
   text-transform: var(--li-a-text-transform);
   font-size: 1rem;
   background-color: #0e0e0e;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
 
   align-content: center;
 
