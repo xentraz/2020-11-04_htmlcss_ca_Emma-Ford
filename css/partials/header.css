@@ -9,7 +9,7 @@ header {
   height: 70px;
   display: block;
   /* border-radius: 0 0 10px 10px; */
-  border-bottom: 1px solid rgba(225, 225, 225, .45);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.45);
 }
 
 header .logo {
@@ -165,7 +165,7 @@ header ul > li > a.logout:hover::before {
 @media (max-width: 1024px) {
   .logo {
     padding-left: 20px;
-    margin-right:  40px;
+    margin-right: 40px;
   }
 
   .toggle-button {
