@@ -1,22 +1,23 @@
 /* Style Sheets */
-@import "/css/Partials/layout.css";
+@import '/css/Partials/layout.css';
 
-@import "/css/Partials/footer.css";
-@import "/css/Partials/header.css";
+@import '/css/Partials/footer.css';
+@import '/css/Partials/header.css';
 
-@import "/css/Partials/index.css";
+@import '/css/Partials/index.css';
 
-@import "/css/partials/basket.css";
-@import "/css/Partials/account.css";
-@import "/css/Partials/browse.css";
-@import "/css/Partials/checkout.css";
-@import "/css/Partials/checkout-complete.css";
-@import "/css/Partials/contact.css";
-@import "/css/Partials/create-account.css";
-@import "/css/Partials/search.css";
+@import '/css/partials/basket.css';
+@import '/css/Partials/account.css';
+@import '/css/Partials/browse.css';
+@import '/css/Partials/checkout.css';
+@import '/css/Partials/checkout-complete.css';
+@import '/css/Partials/contact.css';
+@import '/css/Partials/create-account.css';
+@import '/css/Partials/search.css';
+@import '/css/partials/browse_games.css';
 
 /* General Styles */
-@import "/css/styles.css";
+@import '/css/styles.css';
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400;700;900&family=Lato:wght@100;300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400;700;900&family=Lato:wght@100;300;400;700&display=swap');
