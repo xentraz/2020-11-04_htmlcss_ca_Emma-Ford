@@ -72,9 +72,6 @@ async function getGames(){
     }, 5000)
   }
   document.querySelector('.loading').innerHTML = ``;
-  document.querySelector('.gameInfo').classList.remove('hide');
-  document.querySelector('.basketButton').classList.remove('hide');
-  document.querySelector('.sale').classList.remove('hide');
 }
 
 getGames(id);
