@@ -15,7 +15,8 @@ const getGames = async () => {
 
 		gameCards(GameHubAPI);
     gameCards2(GameHubAPI);
-    gameCards3(GameHubAPI)
+    gameCards3(GameHubAPI);
+    gameCards4(GameHubAPI);
 
 
 	} catch (error) {
@@ -42,9 +43,9 @@ const gameCards = (GamesArray) => {
       mainElm.innerHTML += 
       `
       <div class="gameCard">
-      <h3>${GamesArray[i].name}</h3>
       <div class="gameImg"><img src="${GamesArray[i].images[0].src}"/></div>
-      <a href="/html/details.html?id=${GamesArray[i].id}">More Info</a>
+      <h3>${GamesArray[i].name}</h3>
+      <div class="info-button"><a href="/html/details.html?id=${GamesArray[i].id}">More Info</a></div>
       </div>
       `;
     }
@@ -58,9 +59,9 @@ const gameCards2 = (GamesArray2) => {
       mainElm2.innerHTML += 
       `
       <div class="gameCard">
-      <h3>${GamesArray2[i].name}</h3>
       <div class="gameImg"><img src="${GamesArray2[i].images[0].src}"/></div>
-      <a href="/html/details.html?id=${GamesArray2[i].id}">More Info</a>
+      <h3>${GamesArray2[i].name}</h3>
+      <div class="info-button"><a href="/html/details.html?id=${GamesArray2[i].id}">More Info</a></div>
       </div>
       `;
     }
@@ -70,15 +71,32 @@ const gameCards2 = (GamesArray2) => {
 const gameCards3 = (GamesArray3) => {
 	const mainElm3 = document.querySelector('.newInfo');
   for (let i = 0; i < GamesArray3.length; i++) {
-    if ((GamesArray3[i].categories[0].name === 'New Releases') || (GamesArray3[i].categories[1].name === 'New Releases')) {
+    if ((GamesArray3[i].categories[0].name === 'New Releases') || (GamesArray3[i].categories[1].name === 'New Releases') || (GamesArray3[i].name === 'Spellbreak')) {
       mainElm3.innerHTML += 
       `
       <div class="gameCard">
-      <h3>${GamesArray3[i].name}</h3>
       <div class="gameImg"><img src="${GamesArray3[i].images[0].src}"/></div>
-      <a href="/html/details.html?id=${GamesArray3[i].id}">More Info</a>
+      <h3>${GamesArray3[i].name}</h3>
+      <div class="info-button"><a href="/html/details.html?id=${GamesArray3[i].id}">More Info</a></div>
       </div>
       `;
     }
   }
 }
+
+const gameCards4 = (GamesArray4) => {
+	const mainElm4 = document.querySelector('.usedInfo');
+  for (let i = 0; i < GamesArray4.length; i++) {
+    if ((GamesArray4[i].categories[0].name === 'Used Games') || (GamesArray4[i].categories[1].name === 'Used Games')) {
+      mainElm4.innerHTML += 
+      `
+      <div class="gameCard">
+      <div class="gameImg"><img src="${GamesArray4[i].images[0].src}"/></div>
+      <h3>${GamesArray4[i].name}</h3>
+      <div class="info-button"><a href="/html/details.html?id=${GamesArray4[i].id}">More Info</a></div>
+      </div>
+      `;
+    }
+  }
+}
+
