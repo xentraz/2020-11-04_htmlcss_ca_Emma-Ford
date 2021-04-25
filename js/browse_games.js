@@ -1,8 +1,5 @@
 let GameHubAPI = [];
 
-// document.querySelector('.loading').innerHTML = `<img src="https://www.gatewaygreen.org/wp-content/uploads/2017/07/Spinner.gif"/>`
-// Source: 
-
 const getGames = async () => {
 	try {
 		const response = await fetch(
@@ -30,7 +27,6 @@ const getGames = async () => {
       document.querySelector('.alert').innerHTML = ``;
     }, 5000)
 	}
-	// document.querySelector('.loading').innerHTML = ``;
 };
 
 getGames();

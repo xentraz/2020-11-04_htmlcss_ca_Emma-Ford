@@ -1,3 +1,7 @@
+.hide {
+  display: hidden;
+}
+
 .details-main {
   margin: 0px;
   padding: 0px;
@@ -18,10 +22,23 @@
 
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 7vh 55vh 10vh;
+  grid-template-rows: 7vh 60vh 10vh 10vh;
   grid-row-gap: 1vh;
 
   background-color: rgba(255, 255, 255, 0.445);
+}
+
+.loading {
+  grid-row: 2/2;
+  grid-column: 2/2;
+
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gameInfo {
@@ -32,9 +49,9 @@
   width: 100%;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
   grid-template-rows: 2fr 0.5fr;
-  row-gap: 0.5vh;
+  row-gap: 1vh;
 }
 
 .gameInfo .gameDetails {
@@ -58,6 +75,8 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.89);
+
+  margin-top: 20px;
 }
 
 .gameName h1 {
@@ -98,10 +117,14 @@
   grid-row: 2/3;
 
   height: 100%;
+  width: 100%;
+  padding: 10px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   text-align: center;
 
@@ -109,14 +132,17 @@
 }
 
 .gameDesc p {
+  width: 100%;
+
   color: rgb(255, 255, 255);
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  padding: 10px;
+
+  word-wrap: wrap;
+  text-align: center;
 }
 
 .gameInfo .stockStatus {
@@ -125,10 +151,76 @@
 
   height: 100%;
   width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.89);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sale {
-  grid-row: 5/5;
+.stockStatus p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.gameInfo .tags {
+  grid-row: 2/2;
+  grid-column: 1/1;
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.89);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.gameInfo .categories {
+  grid-row: 2/2;
+  grid-column: 2/2;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.89);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.details-grid .sale {
+  grid-row: 4/4;
   grid-column: 2/2;
 
   height: 100%;
@@ -151,7 +243,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: red;
   text-align: center;
 }
 
@@ -159,25 +251,91 @@
   text-decoration: line-through;
 }
 
-.gameInfo .tags {
-  grid-row: 2/2;
-  grid-column: 1/1;
-
-  height: 100%;
-  width: 100%;
-}
-
-.gameInfo .categories {
-  grid-row: 2/2;
-  grid-column: 2/2;
-
-  height: 100%;
-  width: 100%;
-}
-
 .details-grid .basketButton {
   grid-row: 3/3;
   grid-column: 2/2;
 
   width: 100%;
+  width: 100%;
+}
+
+.basketButton {
+  margin: 0px auto;
+
+  background: rgba(255, 255, 255, 0.55);
+  /* border: 2px solid rgba(0, 0, 0, 0.89); */
+
+  transition: 0.5s;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 1.3rem;
+  text-transform: var(--general-text-transform);
+  font-family: var(--general-font-family);
+  text-decoration: var(--general-text-decoration);
+  font-weight: 400;
+}
+
+.basketButton:focus {
+  outline: none;
+}
+
+.basketButton::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.89);
+  color: rgb(255, 255, 255);
+  background-color: none;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+  border: none;
+  font-weight: 400;
+}
+
+.basketButton::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+  border: none;
+  font-weight: 400;
+
+  border: 2px solid rgba(255, 255, 255, 0.89);
+}
+
+.basketButton:hover {
+  background: rgba(0, 0, 0, 0.89);
+  border: 2px solid rgba(255, 255, 255, 0.89);
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-weight: 400;
+}
+
+.basketButton:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.5s;
+  border: none;
+
+  border: 2px solid rgba(255, 255, 255, 0.89);
+}
+
+.basketButton:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.5s;
+  border: none;
+  font-weight: 400;
+
+  border: 2px solid rgba(255, 255, 255, 0.89);
 }

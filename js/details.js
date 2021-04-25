@@ -3,7 +3,6 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-
 async function getGames(){
   try{
     const response = await fetch("https://noroffcors.herokuapp.com/http://xentraz.tech/wp-json/wc/store/products/" + id);
@@ -21,7 +20,7 @@ async function getGames(){
       </div>
       <div class="gameImg2"><img src="${gamesResult.images[0].src}"/></div>
       <div class="gameDesc">
-        <p>${gamesResult.description}</p>
+        ${gamesResult.description}
       </div>
     </div>
     `;
@@ -33,7 +32,7 @@ async function getGames(){
   
     document.querySelector('.tags').innerHTML += 
     `
-    <div class="tags">
+    <div class="tagsList">
     <p>Available On: ${gamesResult.tags[0].name}, ${gamesResult.tags[1].name}, ${gamesResult.tags[2].name}</p>
     </div>
     `; 
@@ -51,14 +50,15 @@ async function getGames(){
     document.querySelector('.basketButton').innerHTML += 
     `
     <div class="priceButton">
-    <p>Price: ${gamesResult.prices.price}-, NOK</p>
+    <p>${gamesResult.prices.price}-, NOK</p>
+    <p>Add to basket</p>
     </div>
     `; 
 
     document.querySelector('.categories').innerHTML += 
     `
     <div class="categoriesList">
-    <p>Category: ${gamesResult.categories[0].name}, ${gamesResult.categories[1].name}</p>`; 
+    <p>Categories: ${gamesResult.categories[0].name}, ${gamesResult.categories[1].name}</p>`; 
 
   } catch (error) {
     document.querySelector('.alert').innerHTML = showAlertToUser (
@@ -71,6 +71,10 @@ async function getGames(){
       document.querySelector('.alert').innerHTML = ``;
     }, 5000)
   }
+  document.querySelector('.loading').innerHTML = ``;
+  document.querySelector('.gameInfo').classList.remove('hide');
+  document.querySelector('.basketButton').classList.remove('hide');
+  document.querySelector('.sale').classList.remove('hide');
 }
 
 getGames(id);
