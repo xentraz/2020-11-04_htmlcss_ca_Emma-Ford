@@ -14,6 +14,7 @@
 @import '/css/Partials/create-account.css';
 @import '/css/Partials/search.css';
 @import '/css/partials/browse_games.css';
+@import '/css/partials/details.css';
 
 /* General Styles */
 @import '/css/styles.css';
